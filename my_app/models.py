@@ -4,7 +4,7 @@ from django.utils import timezone
  
 class Post(models.Model): 
     title = models.CharField(max_length=200) 
-    price = models.CharField(max_length=5) 
+    price = models.CharField(max_length=10) 
     text = models.TextField() 
     created_date = models.DateTimeField( 
             default=timezone.now) 

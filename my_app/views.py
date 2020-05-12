@@ -3,6 +3,9 @@ from .models import Post
 from .forms import PostForm
 import datetime
 from django.utils import timezone
+from django.views import generic
+
+
 
 
 def post_list(request): 
@@ -23,4 +26,4 @@ def post_new(request):
 		form = PostForm()
 	return render(request, 'blog/post_edit.html',
 {'form': form}) 
-# Create your views here.
+
